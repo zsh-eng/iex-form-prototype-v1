@@ -1,5 +1,15 @@
+import IExForm from '@/components/form';
+
 export default function Home() {
+  // Pass the query parameters to your form
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between p-24'></main>
+    <main className='flex justify-center items-center'>
+      <section className='flex flex-col gap-6 w-full px-4 md:w-3/5 min-h-screen justify-center'>
+        <h1 className='scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl'>
+          D2L Food Rescue Form
+        </h1>
+        <IExForm />
+      </section>
+    </main>
   );
 }
