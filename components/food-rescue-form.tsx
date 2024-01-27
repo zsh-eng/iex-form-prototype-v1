@@ -28,7 +28,7 @@ const formSchema = z.object({
   weight: z.number(),
 });
 
-export default function IExForm() {
+export default function FoodRescueForm() {
   const params = useSearchParams();
 
   const weightInt = parseFloat(params.get('weight') ?? '');
